@@ -1,0 +1,17 @@
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\obj\Debug\net6.0\VirtualPetSimCLI.csproj.AssemblyReference.cache
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\obj\Debug\net6.0\VirtualPetSimCLI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\obj\Debug\net6.0\VirtualPetSimCLI.AssemblyInfoInputs.cache
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\obj\Debug\net6.0\VirtualPetSimCLI.AssemblyInfo.cs
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\obj\Debug\net6.0\VirtualPetSimCLI.csproj.CoreCompileInputs.cache
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\bin\Debug\net6.0\VirtualPetSimCLI.exe
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\bin\Debug\net6.0\VirtualPetSimCLI.deps.json
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\bin\Debug\net6.0\VirtualPetSimCLI.runtimeconfig.json
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\bin\Debug\net6.0\VirtualPetSimCLI.dll
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\bin\Debug\net6.0\VirtualPetSimCLI.pdb
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\obj\Debug\net6.0\VirtualPetSimCLI.csproj.CopyComplete
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\obj\Debug\net6.0\VirtualPetSimCLI.dll
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\obj\Debug\net6.0\refint\VirtualPetSimCLI.dll
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\obj\Debug\net6.0\VirtualPetSimCLI.pdb
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\obj\Debug\net6.0\VirtualPetSimCLI.genruntimeconfig.cache
+C:\Users\markt\OneDrive\Documents\#-Main_Documents\_C#Projects\VirtualPetSimCLI\VirtualPetSimCLI\obj\Debug\net6.0\ref\VirtualPetSimCLI.dll
