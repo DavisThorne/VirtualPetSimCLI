@@ -17,6 +17,18 @@ public static class CreateNewGame
 {
     public static void Create()
     {
-        
+        string userDataPath = Environment.ExpandEnvironmentVariables("%LOCALAPPDATA%\\PetSimCLI\\");
+        string userDataFile = userDataPath + "user.json";
+        if (!Directory.Exists(userDataPath))
+        {
+            Directory.CreateDirectory(userDataPath);
+        }
+
+        if (!File.Exists(userDataFile))
+        {
+            File.Create(userDataFile);
+        }
+
+        Console.WriteLine($"User data file created at {userDataFile}");
     }
 }
