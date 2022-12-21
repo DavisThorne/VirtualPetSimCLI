@@ -19,7 +19,7 @@ public static class MainMenu
             case var _ when choice.Key == D1:
                 Console.Clear();
                 Console.WriteLine("Starting a new game...");
-                CreateNewGame.Create();
+                DataHandling.Inputs();
                 break;
             case var _ when choice.Key == D2:
                 Console.Clear();
