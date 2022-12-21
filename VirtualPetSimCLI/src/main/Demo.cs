@@ -12,7 +12,7 @@ public static class Demo
     
     public static void DemoMenu()
     {
-        Thread agingThread = new Thread(Aging.Tick);
+        Thread agingThread = new(Aging.Tick);
         agingThread.Start();
         
         while (true)
