@@ -40,9 +40,11 @@ public static class Demo
                     Console.WriteLine("You fed your pet.");
                     break;
                 case var _ when choice.Key == D2:
+                    Console.Clear();
                     Console.WriteLine("You played with your pet.");
                     break;
                 case var _ when choice.Key == D3:
+                    Console.Clear();
                     Console.WriteLine("You put your pet to bed.");
                     break;
                 case var _ when choice.Key == D4:
