@@ -2,6 +2,7 @@
 
 public static class SaveData
 {
+    public static string FullFilePath { get; set; } = null!;
     public static string CharacterName { get; set; } = null!;
     public static string PetName { get; set; } = null!;
     public static string PetSpecies { get; set; } = null!;

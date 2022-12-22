@@ -40,10 +40,10 @@ public static class CreateNewGame
     {
         string characterName = SaveData.CharacterName;
         Console.WriteLine(characterName);
-        var userDataPath =
-            Environment.ExpandEnvironmentVariables($"%LOCALAPPDATA%\\PetSimCLI\\{SaveData.CharacterName}");
+        var userDataPath = Environment.ExpandEnvironmentVariables($"%LOCALAPPDATA%\\PetSimCLI\\{SaveData.CharacterName}");
         var userDataFile = $"{SaveData.CharacterName}-{DateTime.Today:dd-MM-yyyy}.json";
         var fullFilePath = Path.Combine(userDataPath, userDataFile);
+        SaveData.FullFilePath = fullFilePath;
 
         if (!Directory.Exists(userDataPath))
         {
@@ -67,21 +67,27 @@ public static class CreateNewGame
             Byte[] jsonEmpty = new UTF8Encoding(true).GetBytes("{}");
             fs.Write(jsonEmpty);
         }
-        
-        var json = File.ReadAllText(fullFilePath);
-        var jObject = JObject.Parse(json);
-        jObject["CharacterName"] = SaveData.CharacterName;
-        jObject["PetName"] = SaveData.PetName;
-        jObject["PetSpecies"] = SaveData.PetSpecies;
-        jObject["PetAge"] = SaveData.PetAge;
-        jObject["PetHunger"] = SaveData.PetHunger;
-        jObject["PetThirst"] = SaveData.PetThirst;
-        jObject["PetHappiness"] = SaveData.PetHappiness;
-        jObject["PetHealth"] = SaveData.PetHealth;
-        jObject["PetEnergy"] = SaveData.PetEnergy;
-        jObject["PetCleanliness"] = SaveData.PetCleanliness;
-        string jsonSaveData = JsonConvert.SerializeObject(jObject, Formatting.Indented);
-        File.WriteAllText(fullFilePath, jsonSaveData);
+
+        using (StreamWriter file = new StreamWriter(File.Open(fullFilePath, FileMode.Open)))
+        {
+            var json = file.ToString();
+            var jObject = JObject.FromObject(new {
+                SaveData.CharacterName,
+                SaveData.PetName,
+                SaveData.PetSpecies,
+                SaveData.PetAge,
+                SaveData.PetHunger,
+                SaveData.PetThirst,
+                SaveData.PetHappiness,
+                SaveData.PetHealth,
+                SaveData.PetEnergy,
+                SaveData.PetCleanliness
+            });
+            string jsonSaveData = JsonConvert.SerializeObject(jObject, Formatting.Indented);
+            //File.WriteAllText(fullFilePath, jsonSaveData); 
+            file.Write(jsonSaveData);
+        }
+        MainGame.StartThreadedLoops();
     }
 }
 

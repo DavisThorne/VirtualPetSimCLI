@@ -1,19 +1,20 @@
 ﻿using static System.ConsoleKey;
+using static VirtualPetSimCLI.main.SaveData;
 
 
 namespace VirtualPetSimCLI.main;
 
-public static class Demo
+public abstract class Demo
 {
-    public static int PetAge = 0;
-    public static int PetHunger = 0;
+    public static int petAge = PetAge;
+    public static int petHunger = PetHunger;
     
     
     
     public static void DemoMenu()
     {
-        Thread agingThread = new(Aging.Tick);
-        agingThread.Start();
+        Thread threadedLoops = new(ThreadedClass.RunThreadedLoops);
+        threadedLoops.Start();
         
         while (true)
         {
@@ -24,7 +25,7 @@ public static class Demo
             Console.Clear();
             Console.WriteLine("Welcome to the Virtual Pet Simulator!");
             Console.WriteLine($"You have a {petType} named {petName}.");
-            Console.WriteLine($"Your pet is {PetAge} years old.");
+            Console.WriteLine($"Your pet is {petAge} years old.");
             Console.WriteLine("What would you like to do?");
             Console.WriteLine("1. Feed your pet");
             Console.WriteLine("2. Play with your pet");
@@ -49,7 +50,7 @@ public static class Demo
                     break;
                 case var _ when choice.Key == D4:
                     Console.Clear();
-                    Console.WriteLine($"Your pet is {PetAge} years old.");
+                    Console.WriteLine($"Your pet is {petAge} years old.");
                     break;
                 case var _ when choice.Key == D0:
                     Console.Clear();
