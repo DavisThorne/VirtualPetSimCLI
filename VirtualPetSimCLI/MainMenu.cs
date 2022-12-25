@@ -24,7 +24,7 @@ public static class MainMenu
             case var _ when choice.Key == D2:
                 Console.Clear();
                 Console.WriteLine("Loading a game...");
-                //LoadGame.Main();
+                LoadGame.Load();
                 break;
             case var _ when choice.Key == D3:
                 Console.Clear();

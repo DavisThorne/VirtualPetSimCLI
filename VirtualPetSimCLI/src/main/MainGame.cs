@@ -64,10 +64,12 @@ public static class MainGame
                     CheckPetStats();
                     break;
                 case var _ when choice.Key == D6:
+                    Console.Clear();
                     SaveGame.Save();
                     Environment.Exit(0);
                     break;
                 case var _ when choice.Key == D0:
+                    Console.Clear();
                     Environment.Exit(0);
                     break;
                 default:
