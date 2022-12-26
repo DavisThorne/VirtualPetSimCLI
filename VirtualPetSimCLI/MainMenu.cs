@@ -1,4 +1,8 @@
-﻿using VirtualPetSimCLI.main;
+﻿// Author Davis Thorne
+// Date 26-12-2022
+// Version 1.0
+
+using VirtualPetSimCLI.main;
 using static System.ConsoleKey;
 
 namespace VirtualPetSimCLI;

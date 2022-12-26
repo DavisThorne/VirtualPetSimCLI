@@ -20,7 +20,7 @@ public static class ThreadedClass
             }
         });
         agingLoop.Start();
-        
+
         Thread hungerLoop = new Thread(() =>
         {
             while (true)
@@ -35,6 +35,20 @@ public static class ThreadedClass
             }
         });
         hungerLoop.Start();
+
+        Thread thirstLoop = new Thread(() =>
+        {
+            while (true)
+            {
+                Thread.Sleep(60000);
+                lock (LockObject)
+                {
+                    SaveData.PetThirst--;
+                    PetParams.PetThirstLocal--;
+                }
+            }
+        });
+        thirstLoop.Start();
     }
 }
 

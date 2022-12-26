@@ -56,6 +56,7 @@ public static class CreateNewGame
         }
 
         Console.WriteLine($"User data file created at {fullFilePath}");
+        Thread.Sleep(300);
         JsonParser(fullFilePath);
     }
 

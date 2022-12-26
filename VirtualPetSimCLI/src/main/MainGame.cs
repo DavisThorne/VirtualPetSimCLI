@@ -92,21 +92,37 @@ public static class MainGame
 
     private static void PutPetToBed()
     {
-        throw new NotImplementedException();
+        Console.WriteLine($"You put {PetParams.PetNameLocal} to bed.");
+        PetParams.PetEnergyLocal = 100;
+        Console.WriteLine("Press any key to continue...");
+        Console.ReadKey();
+        MainGameMenu();
     }
 
     private static void GivePetBath()
     {
-        throw new NotImplementedException();
+        Console.WriteLine($"You give {PetParams.PetNameLocal} a bath.");
+        PetParams.PetCleanlinessLocal = 100;
+        Console.WriteLine("Press any key to continue...");
+        Console.ReadKey();
+        MainGameMenu();
     }
 
     private static void FeedPet()
     {
-        throw new NotImplementedException();
+        Console.WriteLine($"You feed {PetParams.PetNameLocal}.");
+        PetParams.PetHungerLocal = 100;
+        Console.WriteLine("Press any key to continue...");
+        Console.ReadKey();
+        MainGameMenu();
     }
 
     private static void PlayWithPet()
     {
-        throw new NotImplementedException();
+        Console.WriteLine($"You play with {PetParams.PetNameLocal}.");
+        PetParams.PetHappinessLocal = 100;
+        Console.WriteLine("Press any key to continue...");
+        Console.ReadKey();
+        MainGameMenu();      
     }
 }
